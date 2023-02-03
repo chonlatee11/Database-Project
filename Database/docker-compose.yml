@@ -17,14 +17,14 @@ services:
     networks:
       - db
     ports:
-      - 3306:3306
+      - 3307:3307
 
   phpmyadmin:
       image: 'phpmyadmin/phpmyadmin:latest'
       container_name: phpmyadmin
       restart: always
       ports:
-        - 8080:80
+        - 8081:80
       networks:
         - db
       environment:
